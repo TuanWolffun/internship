@@ -1,4 +1,4 @@
-All projects in repository:
+**All projects in repository**
 
 1. Human and Rocket (done in 27/4)
    - Game 2D, control human far from rocket
