@@ -1,0 +1,6 @@
+﻿input{
+	button Fire;
+	FPVector2 Direction;
+}
+
+

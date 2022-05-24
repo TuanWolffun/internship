@@ -1,0 +1,27 @@
+﻿asset AttackStyle;
+component Tank{
+	player_ref Player;
+	FP maxSpeed;
+	FP accelation ;
+	FP braking;
+	FP rotationSpeed;
+	asset_ref<AttackStyle> defaultAttack;
+	asset_ref<AttackStyle> currentWeapon;
+    FP bulletAmount;
+    FP interval;
+}
+
+component Weapon{
+	player_ref Shell;
+	FP TimeToDesTroy;
+}
+
+component Turret{
+	player_ref turret;
+	FP speed;
+}
+
+component ItemPower{
+	player_ref item;
+	asset_ref<AttackStyle> weapon;
+}
