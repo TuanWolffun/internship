@@ -32,3 +32,11 @@
      + create more shoot style for tank (20/5)
      + create online access for multiplayer
    
+After 1 month study in Wolffun Company:
+   - Use Unity engine, understand unity operation.
+   - Traverse frame in local, extend online.
+   - Create 2D, 3D beginner games.
+   - Animation action, algoithm about physical collider.
+   
+   - Low skill, slow.
+   - Not optimization.
