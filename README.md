@@ -25,11 +25,18 @@
      + shell algorithm: 5 shoot styles
      + switch ShootStyle to ScriptableObject
 
-4. Tanknarok (current)
+4. Tanknarok (done in 25/5)
    - Game 3D, 2 tank fight online
    - Self timeline:
      + switch to ScriptableOject (done in 19/5)
      + create more shoot style for tank (20/5)
-     + study how to create online access
-     + next follow to mentor
+     + create online access for multiplayer
    
+After 1 month study in Wolffun Company:
+   - Use Unity engine, understand unity operation.
+   - Traverse frame in local, extend online.
+   - Create 2D, 3D beginner games.
+   - Animation action, algoithm about physical collider.
+   
+   - Low skill, slow.
+   - Not optimization.
