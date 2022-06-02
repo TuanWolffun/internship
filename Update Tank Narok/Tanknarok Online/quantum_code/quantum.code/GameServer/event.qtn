@@ -1,0 +1,25 @@
+﻿event Start{
+	Int32 index;
+	Int32 health;
+}
+
+event Death{}
+
+event Alive{}
+
+event UpdateHealth{
+	Int32 index;
+}
+
+event UpdatePoint{
+	Int32 index;
+}
+
+event Reset{
+	Int32 index;
+	Int32 health;
+}
+
+event ShellExplored{
+	FPVector3 exploredPosition;
+}
