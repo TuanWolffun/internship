@@ -11,18 +11,20 @@ public class Ball : MonoBehaviour
     public bool destroy;
     private float speed = 5f;
     public int total;
+    private Vector3 reset;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         jump = new Vector3(0.0f, 2.0f, 0.0f);
         total = 0;
+        reset = new Vector3(0f, 3f, 0f);
     }
     void Update()
     {
         BallMove();
         if (transform.localPosition.y < -10f)
-            transform.localPosition = new Vector3(0f, 3f, 0f);
+            transform.localPosition = reset;
     }
 
     void BallMove()
@@ -40,14 +42,18 @@ public class Ball : MonoBehaviour
     void OnCollisionEnter(Collision X)
     {
         if (X.gameObject.CompareTag("Ground"))
-             onair = false;
+        {
+            onair = false;
+            reset = X.transform.position + new Vector3(0f, 3f, 0f);
+        }
+             
         if (X.gameObject.CompareTag("Cheese"))
         {
             var Cheese = X.gameObject.GetComponent<Cheese>();
             if (Cheese.IsCollected)
                 return;
             Cheese.IsCollected = true;
-            Debug.LogError("OnCollectChesse With ID: " + X.gameObject.GetInstanceID().ToString());
+            //Debug.LogError("OnCollectChesse With ID: " + X.gameObject.GetInstanceID().ToString());
             Destroy(X.gameObject);
             transform.localScale += new Vector3(0.02f, 0.02f, 0.02f);
             speed += 0.5f;

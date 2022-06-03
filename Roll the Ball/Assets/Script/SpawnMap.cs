@@ -46,12 +46,12 @@ public class SpawnMap : MonoBehaviour
         {
             if (c.GetComponents<Map>()[0].pre == -1)
             {
-                current.transform.position = position + new Vector3(0, Random.Range(-4f, 5f), Random.Range(22f, 25f));
+                current.transform.position = position + new Vector3(0, Random.Range(-1f, 1f), Random.Range(22f, 25f));
                 current.GetComponents<Map>()[0].pre = 0;
             }
             else
             {
-                current.transform.position = position + new Vector3(-Random.Range(22f, 25f), Random.Range(-4f, 5f), 0);
+                current.transform.position = position + new Vector3(-Random.Range(22f, 25f), Random.Range(-1f, 1f), 0);
                 current.GetComponents<Map>()[0].pre = 1;
             }
         }
@@ -59,18 +59,18 @@ public class SpawnMap : MonoBehaviour
         {
             if (c.GetComponents<Map>()[0].pre == 1)
             {
-                current.transform.position = position + new Vector3(0, Random.Range(-4f, 5f), Random.Range(22f, 25f));
+                current.transform.position = position + new Vector3(0, Random.Range(-1f, 1f), Random.Range(22f, 25f));
                 current.GetComponents<Map>()[0].pre = 0;
             }
             else
             {
-                current.transform.position = position + new Vector3(Random.Range(22f, 25f), Random.Range(-4f, 5f), 0);
+                current.transform.position = position + new Vector3(Random.Range(22f, 25f), Random.Range(-1f, 1f), 0);
                 current.GetComponents<Map>()[0].pre = -1;
             }
         }
         else
         {
-            current.transform.position = position + new Vector3(0, Random.Range(-4f, 5f), Random.Range(22f, 25f));
+            current.transform.position = position + new Vector3(0, Random.Range(-1f, 1f), Random.Range(22f, 25f));
             current.GetComponents<Map>()[0].pre = 0;
         }
         maps[numMaps] = current;

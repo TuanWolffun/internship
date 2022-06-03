@@ -137,7 +137,7 @@ PrefabInstance:
     - target: {fileID: 3127718001972524293, guid: 60c61301d65549b418b2fa5a11d8163e,
         type: 3}
       propertyPath: m_Name
-      value: Map (1)
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 7675644501322903253, guid: 60c61301d65549b418b2fa5a11d8163e,
         type: 3}
